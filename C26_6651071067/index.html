@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Can Chi</title>
+</head>
+<body>
+    <form>
+        <table style="border: 2px solid #66cccc; border-collapse: collapse; font-family: Arial, sans-serif;">
+            <tr>
+                <td colspan="3" align="center" style="background-color: #ffffcc; padding: 10px;">
+                    <h2 style="margin: 0; font-size: 20px;">TÍNH CAN CHI CỦA NGÀY ÂM LỊCH</h2>
+                </td>
+            </tr>
+            
+            <tr style="background-color: #ccffff;">
+                <td style="padding: 5px 10px; font-weight: bold;">Năm dương lịch</td>
+                <td></td> <!-- Ô trống ở giữa -->
+                <td style="padding: 5px 10px; font-weight: bold;">Can chi năm âm lịch</td>
+            </tr>
+            
+            <tr style="background-color: white;">
+                <td style="padding: 10px;">
+                    <input type="number" id="nam" value="2015" style="width: 150px; padding: 3px;">
+                </td>
+                <td align="center" style="padding: 10px;">
+                    <button type="button" onclick="tinhCanChi()" style="border-radius: 10px; padding: 2px 15px;">---></button>
+                </td>
+                <td style="padding: 10px;">
+                    <input type="text" id="kq" style="width: 150px; padding: 3px;" readonly>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
