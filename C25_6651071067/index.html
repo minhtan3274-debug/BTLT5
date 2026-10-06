@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền thực đơn</title>
+</head>
+<body>
+    <form>
+        <table border="1" style="border-collapse: collapse; background-color: #ccff00; width: 450px;">
+            <tr>
+                <td colspan="3" align="center"><h2>THỰC ĐƠN</h2></td>
+            </tr>
+            <tr>
+                <td align="center" style="color: blue; font-weight: bold;">Thức ăn</td>
+                <td align="center" style="color: blue; font-weight: bold;">Nước uống</td>
+                <td align="center" style="color: blue; font-weight: bold;">Thời điểm</td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <select id="food" multiple size="8" style="width: 100%; border: none; outline: none;">
+                        <option value="20000">Bún bò</option>
+                        <option value="18000">Hủ tiếu</option>
+                        <option value="17000">Bánh canh</option>
+                        <option value="19000">Phở bò</option>
+                        <option value="15000">Nuôi</option>
+                        <option value="12000">Bánh mì thịt</option>
+                        <option value="15000">Bánh cuốn</option>
+                    </select>
+                </td>
+                <td valign="top">
+                    <select id="drink" multiple size="8" style="width: 100%; border: none; outline: none;">
+                        <option value="12000">Cà phê đá</option>
+                        <option value="15000">Cà phê sữa đá</option>
+                        <option value="13000">Chanh dây</option>
+                        <option value="12000">Chanh muối</option>
+                        <option value="14000">Xí muội</option>
+                        <option value="13000">Sữa tươi</option>
+                        <option value="17000">Cam vắt</option>
+                    </select>
+                </td>
+                <td valign="middle" style="padding-left: 10px;">
+                    <input type="radio" name="time" id="day" value="day" checked> 
+                    <label for="day">Ban ngày</label><br><br>
+                    <input type="radio" name="time" id="night" value="night"> 
+                    <label for="night">Ban đêm</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" style="padding: 5px;">
+                    <button type="button" onclick="tinhTien()" style="border-radius: 10px; padding: 2px 15px;">Tính tiền</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding: 0;">
+                    <table border="2" bordercolor="darkred" style="border-collapse: collapse; width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="color: blue;">Các món đã dùng</th>
+                                <th style="color: blue;">Tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resBody" style="background-color: #ccffff;">
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
